@@ -2,15 +2,19 @@
 
 int ft_strncmp(char *src char *dest unsigned int n)
 {
-	int	i;
-	int	result;
+	unsigned int	i;
 
 	i = 0;
-	while (src[i] != dest[i] && src[i] != '0' && i > n)
+	while ((i < n) && (s1[i] != '\0' || s2[i] != '\0'))
 	{
-		src[i] - dest[i];
-		i++;
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+		else
+		{
+			i++;
+		}
 	}
-	result = src[i] - dest[i];
-	return (result);
-}	
+	return (0);
+}

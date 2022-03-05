@@ -5,5 +5,6 @@
 #include<stdio.h>
 #include<string.h>
 
+int	ft_isalpha(char *str);
 
 #endif
